@@ -56,6 +56,8 @@ a{color:#18181B}a:hover{color:#4A5590}
  .two{grid-template-columns:minmax(0,1fr) !important}
  .three{grid-template-columns:minmax(0,1fr) !important}
  #organizer a{grid-template-columns:minmax(0,1fr) !important}
+ .caster-card{grid-template-columns:120px minmax(0,1fr) !important}
+ .caster-img{height:auto !important;min-height:150px}
  #organizer a > div:first-child{border-right:none !important;border-bottom:2px solid #18181B}
  .navlinks{display:none !important}
  .linkrow{font-size:26px !important}
@@ -75,9 +77,10 @@ a{color:#18181B}a:hover{color:#4A5590}
 <nav class="navlinks" style="display: flex; gap: 28px;">
 <a href="#about" style="text-decoration: none;">01 ABOUT</a>
 <a href="#activity" style="text-decoration: none;">02 ACTIVITY</a>
-<a href="#organizer" style="text-decoration: none;">03 ORGANIZER</a>
-<a href="#entry" style="text-decoration: none;">04 ENTRY</a>
-<a href="#links" style="text-decoration: none;">05 LINKS</a>
+<a href="#caster" style="text-decoration: none;">03 CASTER</a>
+<a href="#organizer" style="text-decoration: none;">04 ORGANIZER</a>
+<a href="#entry" style="text-decoration: none;">05 ENTRY</a>
+<a href="#links" style="text-decoration: none;">06 LINKS</a>
 </nav>
 </header>
 
@@ -171,9 +174,44 @@ a{color:#18181B}a:hover{color:#4A5590}
 </div>
 </section>
 
-<section id="organizer" class="sec-pad" style="position: relative; z-index: 1; max-width: 1360px; margin: 0 auto; padding: 120px 40px 0; box-sizing: border-box;">
+<section id="caster" class="sec-pad" style="position: relative; z-index: 1; max-width: 1360px; margin: 0 auto; padding: 120px 40px 0; box-sizing: border-box;">
 <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 48px; border-bottom: 2px solid #18181B; padding-bottom: 14px;">
 <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px;">03</span>
+<h2 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-style: italic; font-size: 64px; line-height: 1; letter-spacing: .02em;">CASTER</h2>
+<span style="margin-left: auto; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3F4155;">OFFICIAL CASTER</span>
+</div>
+<div class="two" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px;">
+
+<article class="caster-card" style="display: grid; grid-template-columns: 200px minmax(0, 1fr); border: 2px solid #18181B; background: #E6E4DF;">
+<div class="caster-img" style="position: relative; overflow: hidden; background: #4A5590; border-right: 2px solid #18181B; height: 100%; min-height: 240px;">
+<img src="assets/caster-satoru.png" alt="さとる先生" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 12%; display: block;">
+<span style="position: absolute; left: 8px; top: 8px; background: #18181B; color: #F2F1EE; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .1em; padding: 2px 6px;">CAST-01</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px; padding: 28px;">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .12em; color: #3F4155;">OFFICIAL CASTER</span>
+<h3 style="margin: 0; font-family: 'Noto Sans JP', sans-serif; font-weight: 700; font-size: 30px; line-height: 1.2;">さとる先生</h3>
+<a href="https://x.com/gojo3po" target="_blank" rel="noopener" style="margin-top: auto; align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 16px; background: #18181B; color: #F2F1EE; text-decoration: none; font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500;"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M4 4 L20 20 M20 4 L4 20"></path></svg>@gojo3po</a>
+</div>
+</article>
+
+<article class="caster-card" style="display: grid; grid-template-columns: 200px minmax(0, 1fr); border: 2px solid #18181B; background: #E6E4DF;">
+<div class="caster-img" style="position: relative; overflow: hidden; background: #000000; border-right: 2px solid #18181B; height: 100%; min-height: 240px;">
+<img src="assets/caster-seagull.jpg" alt="Seagull" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; display: block;">
+<span style="position: absolute; left: 8px; top: 8px; background: #F2F1EE; color: #18181B; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .1em; padding: 2px 6px;">CAST-02</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px; padding: 28px;">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .12em; color: #3F4155;">OFFICIAL CASTER</span>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-style: italic; font-size: 38px; line-height: 1;">Seagull</h3>
+<a href="https://x.com/Seagull0302" target="_blank" rel="noopener" style="margin-top: auto; align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 16px; background: #18181B; color: #F2F1EE; text-decoration: none; font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500;"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M4 4 L20 20 M20 4 L4 20"></path></svg>@Seagull0302</a>
+</div>
+</article>
+
+</div>
+</section>
+
+<section id="organizer" class="sec-pad" style="position: relative; z-index: 1; max-width: 1360px; margin: 0 auto; padding: 120px 40px 0; box-sizing: border-box;">
+<div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 48px; border-bottom: 2px solid #18181B; padding-bottom: 14px;">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px;">04</span>
 <h2 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-style: italic; font-size: 64px; line-height: 1; letter-spacing: .02em;">ORGANIZER</h2>
 <span style="margin-left: auto; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3F4155;">ORGANIZED BY</span>
 </div>
@@ -194,7 +232,7 @@ a{color:#18181B}a:hover{color:#4A5590}
 
 <section id="entry" class="sec-pad" style="position: relative; z-index: 1; max-width: 1360px; margin: 0 auto; padding: 120px 40px; box-sizing: border-box;">
 <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 48px; border-bottom: 2px solid #18181B; padding-bottom: 14px;">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px;">04</span>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px;">05</span>
 <h2 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-style: italic; font-size: 64px; line-height: 1; letter-spacing: .02em;">ENTRY</h2>
 <span style="margin-left: auto; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3F4155;">JOIN THE SCRIM</span>
 </div>
@@ -216,7 +254,7 @@ a{color:#18181B}a:hover{color:#4A5590}
 <section id="links" style="position: relative; z-index: 1; background: #18181B; color: #E8E7E3;">
 <div class="sec-pad" style="max-width: 1360px; margin: 0 auto; padding: 80px 40px; box-sizing: border-box;">
 <div style="display: flex; justify-content: space-between; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .1em; margin-bottom: 24px; color: #A9ADC9;">
-<span>05 / LINKS</span><span>OFFICIAL CHANNELS</span>
+<span>06 / LINKS</span><span>OFFICIAL CHANNELS</span>
 </div>
 <div style="display: flex; flex-direction: column; border-top: 1px solid #45475A;">
 <a class="lnk linkrow" href="https://x.com/_PMSB_" target="_blank" rel="noopener" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 12px; border-bottom: 1px solid #45475A; color: #F2F1EE; text-decoration: none; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 40px; letter-spacing: .02em;"><span>X</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; font-weight: 400;">@_PMSB_ ↗</span></a>
